@@ -11,5 +11,6 @@ public class compL1_3 {
             }
             System.out.println();
         }
+        scan.close();
     }
 }

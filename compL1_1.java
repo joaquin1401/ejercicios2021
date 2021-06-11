@@ -6,5 +6,6 @@ public class compL1_1 {
         System.out.print("Ingrese su nombre: ");
         String nombre = scan.nextLine();
         System.out.println("Hola " + nombre + "!!");
+        scan.close();
     }
 }

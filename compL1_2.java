@@ -12,5 +12,6 @@ public class compL1_2 {
         System.out.println(primero + " - " + segundo + " = " + (primero-segundo));
         System.out.println(primero + " / " + segundo + " = " + primero/segundo);
         System.out.println(primero + " % " + segundo + " = " + primero%segundo);
+        scan.close();
     }
 }

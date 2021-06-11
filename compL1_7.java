@@ -8,11 +8,22 @@ public class compL1_7 {
         System.out.print("Ingrese un texto");
         String salida = new String();
         String texto = scan.nextLine();
+        boolean bandera;
         for (int i = 0; i < texto.length(); i++) {
-            if ((texto[i]) == 'q') {
-                System.out.println("prueva");
+            bandera = true;
+            for (int j = 0; j < minusculas.length; j++) {            
+                if (minusculas[j] == texto.charAt(i)) {
+                    salida = salida + mayusculas[j];
+                    bandera = false;
+                    break;
+                }
+            }
+            if (bandera) {
+                salida = salida + texto.charAt(i);
             }
         }
+        System.out.println(salida);
+        scan.close();
     
     }
 }
